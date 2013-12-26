@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src = 'grouping.js' type = 'text/javascript' ></script>
+<link rel='stylesheet' type='text/css' href='grouping.css'>
+</head>
+<body onLoad = 'main(document.getElementsByName("main")[0])'>
+<div class = 'mainCanvas'>
+	<canvas name = 'main'></canvas>
+</div>
+<div class = 'contents' name = 'contents'>
+	<div class = 'contentsHead'>Contents</div>
+</div>
+<div class = 'controls'>
+	<input type = 'button' value = 'Reset Zoom/Pan' onClick='resetTransformations()'></input>
+	<input type = 'text' name = 'nodeSearchTerm' onkeydown='if (event.keyCode == 13)centerOnNode(document.getElementsByName("nodeSearchTerm")[0].value);'></input>
+	<input type = 'button' value = 'Find Node' onClick='centerOnNode(document.getElementsByName("nodeSearchTerm")[0].value)'></input>
+</div>
+</body>
+</html>
